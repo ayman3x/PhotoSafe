@@ -6,14 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "btfs": "btfs.exe daemon --chain-id 1029"
   },
   "dependencies": {
+    "@bundlr-network/client": "^0.7.8",
+    "@chakra-ui/react": "^2.2.1",
+    "framer-motion": "^6",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.3",
+    "dotenv": "^16.0.1",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.4",
     "next": "13.0.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "wagmi": "^0.8.3",
+    "@rainbow-me/rainbowkit": "^0.5.1",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "web3modal": "^1.9.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
