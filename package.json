@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start", 
+    "export": "next export", 
     "lint": "next lint",
     "btfs": "btfs.exe daemon --chain-id 1029"
   },
