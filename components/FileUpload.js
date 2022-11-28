@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 
 
 // drag drop file component
-const DragDropFile = () => {
+const DragDropFile = ({setFile}) => {
     // drag state
     const [dragActive, setDragActive] = useState(false);
     // ref
@@ -26,7 +26,8 @@ const DragDropFile = () => {
       setDragActive(false);
       if (e.dataTransfer.files && e.dataTransfer.files[0]) {
         // handleFiles(e.dataTransfer.files);
-        console.log(e)
+        console.log(e.dataTransfer.files[0])
+        setFile(e.dataTransfer.files[0])
       }
     };
     

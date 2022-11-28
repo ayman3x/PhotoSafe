@@ -5,14 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start", 
-    "export": "next export", 
+    "start": "next start",
     "lint": "next lint",
     "btfs": "btfs.exe daemon --chain-id 1029"
   },
   "dependencies": {
-    "@bundlr-network/client": "^0.7.8",
-    "@chakra-ui/react": "^2.2.1",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@rainbow-me/rainbowkit": "^0.5.1",
@@ -20,19 +17,14 @@
     "dotenv": "^16.0.1",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.3",
-    "ethereum-waffle": "^3.4.0",
     "ethers": "^5.5.4",
-    "framer-motion": "^6",
     "ipfs-core": "^0.17.0",
     "next": "13.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-responsive-carousel": "^3.2.23",
     "wagmi": "^0.6.5",
-    "web3modal": "^1.9.5",
-    "@w3ui/react-keyring": "^1.0.1",
-    "@w3ui/react-uploader": "^2.0.0",
-    "@w3ui/react-uploads-list": "^1.0.0"
+    "web3modal": "^1.9.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

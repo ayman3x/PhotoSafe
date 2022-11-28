@@ -2,7 +2,6 @@ import '../styles/globals.css'
 import '@rainbow-me/rainbowkit/styles.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-import { UploaderProvider } from '@w3ui/react-uploader'
 
 import {
   getDefaultWallets,
@@ -37,14 +36,16 @@ const wagmiClient = createClient({
   provider
 });
 
+import { IPFSProvider } from '../IPFS';
+
 
 function MyApp({ Component, pageProps }) {
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider showRecentTransactions={true} chains={chains} initialChain={chain.goerli}>
-        <UploaderProvider>
+        <IPFSProvider>
           <Component {...pageProps} />
-        </UploaderProvider>
+        </IPFSProvider>
       </RainbowKitProvider>
     </WagmiConfig>
 
