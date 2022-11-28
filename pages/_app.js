@@ -36,16 +36,12 @@ const wagmiClient = createClient({
   provider
 });
 
-import { IPFSProvider } from '../IPFS';
-
 
 function MyApp({ Component, pageProps }) {
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider showRecentTransactions={true} chains={chains} initialChain={chain.goerli}>
-        <IPFSProvider>
           <Component {...pageProps} />
-        </IPFSProvider>
       </RainbowKitProvider>
     </WagmiConfig>
 
