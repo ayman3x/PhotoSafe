@@ -33,7 +33,7 @@ export default function Home() {
             alt={'error'}
             src={'/logo.png'}
             onClick={() => {
-              AddFile()
+              router.push('/')
             }}
           />
         </span>
