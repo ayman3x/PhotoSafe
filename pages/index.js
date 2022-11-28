@@ -26,14 +26,13 @@ export default function Home() {
       <span className={`col-start-1 col-end-8 mx-4 grid grid-rows-1 grid-cols-1 `}>
 
         <span className={`col-start-1 row-start-1 justify-self-start self-center`} >
-        <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
 
           <Image
             width={50}
             height={50}
             className={`inline`}
             alt={'error'}
-            src={'/logo.png'}
+            src={'/photosafe.svg'}
             onClick={() => {
               router.push('/')
             }}
