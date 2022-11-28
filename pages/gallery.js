@@ -13,16 +13,20 @@ const Gallery = () => {
             <div className={`justify-self-center row-start-3 col-start-1 col-end-8`}>
                 <Carousel>
                     <div>
-                        <img src="assets/1.jpeg" />
-                        <p className="legend">Legend 1</p>
+                        <img src="/Nature.svg" />
+                        <a href='https://gateway.btfs.io/btfs/QmYhNpA5bwc539yY4XGwve8gjTdm7uGMM16YzhTAkPEonq'>View on BTFS</a>
                     </div>
                     <div>
-                        <img src="assets/2.jpeg" />
-                        <p className="legend">Legend 2</p>
+                        <img src="/Nature-2.svg" />
+                        <a href='https://gateway.btfs.io/btfs/QmT4Q56tyHFYEPtFyEowNVMRvFE6xL1PN47qEhAjBLYtYU'>View on BTFS</a>
                     </div>
                     <div>
-                        <img src="assets/3.jpeg" />
-                        <p className="legend">Legend 3</p>
+                        <img src="/Nature-3.svg" />
+                        <a href='https://gateway.btfs.io/btfs/QmShc78RMxcTvfa3J3SLXw6fhnnkBh9g4LbU9KMYaRoHje'>View on BTFS</a>
+                    </div>
+                    <div>
+                        <img src="/Nature-4.svg" />
+                        <a href='https://gateway.btfs.io/btfs/QmXMYtWQqkmmwvycAbWKnUvKVK1gjWUkEVKpxvCrDTCq1c'>View on BTFS</a>
                     </div>
                 </Carousel>
 
