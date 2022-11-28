@@ -1,7 +1,9 @@
 import '../styles/globals.css'
 import '@rainbow-me/rainbowkit/styles.css';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/captions.css";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 import {
   getDefaultWallets,
