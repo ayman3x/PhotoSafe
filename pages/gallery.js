@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react'
 import { Carousel } from 'react-responsive-carousel';
 
-
 const Gallery = () => {
 
     return (
@@ -11,21 +10,21 @@ const Gallery = () => {
             <span> </span>
 
             <div className={`justify-self-center row-start-3 col-start-1 col-end-8`}>
-                <Carousel>
+                <Carousel >
                     <div>
-                        <img src="/Nature.svg" />
+                        <img src="/Nature.svg" width={200} height={200}/>
                         <a href='https://gateway.btfs.io/btfs/QmYhNpA5bwc539yY4XGwve8gjTdm7uGMM16YzhTAkPEonq'>View on BTFS</a>
                     </div>
                     <div>
-                        <img src="/Nature-2.svg" />
+                        <img src="/Nature-2.svg"  width={200} height={200}/>
                         <a href='https://gateway.btfs.io/btfs/QmT4Q56tyHFYEPtFyEowNVMRvFE6xL1PN47qEhAjBLYtYU'>View on BTFS</a>
                     </div>
                     <div>
-                        <img src="/Nature-3.svg" />
+                        <img src="/Nature-3.svg" width={200} height={200}/>
                         <a href='https://gateway.btfs.io/btfs/QmShc78RMxcTvfa3J3SLXw6fhnnkBh9g4LbU9KMYaRoHje'>View on BTFS</a>
                     </div>
                     <div>
-                        <img src="/Nature-4.svg" />
+                        <img src="/Nature-4.svg" width={200} height={200}/>
                         <a href='https://gateway.btfs.io/btfs/QmXMYtWQqkmmwvycAbWKnUvKVK1gjWUkEVKpxvCrDTCq1c'>View on BTFS</a>
                     </div>
                 </Carousel>
