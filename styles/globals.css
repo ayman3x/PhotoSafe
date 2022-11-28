@@ -7,6 +7,12 @@
   width: 28rem;
   max-width: 100%;
   text-align: center;
+  margin: auto;
+  margin-top: 200px;
+}
+#form-file-upload:hover{
+background: orange;
+border-width: 20px;
 }
 
 #input-file-upload {
