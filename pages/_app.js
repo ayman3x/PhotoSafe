@@ -38,7 +38,7 @@ export const BitTorrentChainDonau = {
 
 const { chains, provider } = configureChains(
   [
-    BitTorrentChainDonau],
+    BitTorrentChainDonau, chain.goerli],
   [
     alchemyProvider({ apiKey: process.env.NEXT_PUBLIC_ALCHEMY_ID }),
     publicProvider()
