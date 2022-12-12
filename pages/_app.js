@@ -18,9 +18,27 @@ import {
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
 
+export const BitTorrentChainDonau = {
+  id: 1029,
+  name: 'BitTorrent Chain Donau',
+  network: 'BitTorrent',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'BitTorrent',
+    symbol: 'BTT',
+  },
+  rpcUrls: {
+    default: { http: ['https://pre-rpc.bt.io/'] },
+  },
+  blockExplorers: {
+    default: { name: 'BttcScan', url: 'https://testnet.bttcscan.com' },
+  }
+}
+
+
 const { chains, provider } = configureChains(
   [
-    chain.goerli,],
+    BitTorrentChainDonau],
   [
     alchemyProvider({ apiKey: process.env.NEXT_PUBLIC_ALCHEMY_ID }),
     publicProvider()
@@ -43,7 +61,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider showRecentTransactions={true} chains={chains} initialChain={chain.goerli}>
-          <Component {...pageProps} />
+        <Component {...pageProps} />
       </RainbowKitProvider>
     </WagmiConfig>
 
